@@ -77,14 +77,16 @@ WSGI_APPLICATION = 'projeto.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "sistema",
+        'NAME': 'railway',
         'PORT': '3306',
-        'HOST': 'localhost',
+        'HOST': 'containers-us-west-111.railway.app',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'EtFEXWdeBXsVQkASdQDE',
         'OPTIONS': {
             'init_command': 'SET default_storage_engine=InnoDB',
         }
+
+        # mysql://root:EtFEXWdeBXsVQkASdQDE@containers-us-west-111.railway.app:5618/railway
     }
 }
 
